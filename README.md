@@ -2,6 +2,10 @@
 
 ***A general landing page for my public works.***
 
+### Current Tasks
+- move site into twitch, code, and  main files
+
+
 ### Sites
 
 
@@ -12,3 +16,4 @@
 
 ### Video Demos
 [Frogger](./videos/demos/FroggerDemo.webm)
+
