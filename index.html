@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PyScript in Browser</title>
         <!-- Include PyScript from CDN -->
-    <link rel="stylesheet" href="../mainStyles.css">
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="./mainStyles.css">
+    <script type="module" src="https://pyscript.net/releases/2024.2.1/core.js"></script>
 
     <script type="text/javascript">
             async function runPyScript() {
@@ -25,9 +25,7 @@
     </script>
 </head>
 <body>
-    <h1>PyScript in Browser</h1>
-    <button onclick="runPyScript()">Run Python Script</button>
-    
-
+    <h1 >PyScript in Browser</h1>
+    <script type="py" src="https://pitherbro.github.io/main.py" config="https://pitherbro.github.io/pyscript.json"></script>
 </body>
 </html>
