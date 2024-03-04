@@ -1,20 +1,16 @@
-#!/bin/python3
+def buyFunction():
+    playerCash = int(document.getElementById("cash").innerText)
+    goodPrice = 5
 
-import os,sys
-from pathlib import Path
-root = Path(os.path.dirname( __file__ ))
+    if playerCash >= goodPrice:
+        newCash = playerCash - goodPrice
+        document.getElementById("cash").innerText = str(newCash)
+    else:
+        alert("Not enough cash to buy the good.")
 
-'''
-#import another module from anywhere
-modPath = root/"module"
-sys.path.append(modPath)
-'''
-def runProg():
-    print(__name__)
-    print(sys.argv)    
-    print(sys.path)
+def sellFunction():
+    playerCash = int(document.getElementById("cash").innerText)
+    goodPrice = 10
 
-if __name__ == "__main__":
-    runProg()
-    os.system("source ./.venv/bin/python3 && python3 ./homepage.py")
-    pass
+    newCash = playerCash + goodPrice
+    document.getElementById("cash").innerText = str(newCash)
