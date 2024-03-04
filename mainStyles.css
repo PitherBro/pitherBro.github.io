@@ -1,6 +1,8 @@
 body{
     background-color: black;
-    color: limegreen;
+    background-image: url(./img/terminalBackground-meh.jpg);
+    opacity: .75;
+    color: rgb(114, 236, 114);
     font-size: large;
 }
 table{
