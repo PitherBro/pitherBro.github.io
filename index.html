@@ -1,32 +1,33 @@
-<header>
-<title>new html</title>
-<link rel="stylesheet" href="./mainStyles.css">
-<script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript in Browser</title>
+        <!-- Include PyScript from CDN -->
+    <link rel="stylesheet" href="../mainStyles.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
-<link rel="stylesheet" href="https://pyscript.net/releases/2024.2.1/core.css">
-<script type="module" src="https://pyscript.net/releases/2024.2.1/core.js"></script>
-
-
-</header>
-
-<body>
     <script type="text/javascript">
-        async function main(){
-            //tells JS to load the Pyodide CDN
-            let pyodide = await loadPyodide();
-            //setup file system
-            
-            //read main file in
-
-            //read in pyodide init file
-            let mainPkg = pyodide.pyimport("main.py")
-
-            //dumb python code into run
-            console.log(pyodide.runPython(mainPkg).runProg())
-        }
-
-      </script>
-
-      <script type="py" src="./main.py" config="./pyscript.json"></script>
+            async function runPyScript() {
+                // Fetch Python script (main.py) from the same origin
+                const response = await fetch('http://localhost:8000/main.py');
+                const script = await response.text();
+    
+                // Execute Python script using PyScript
+                try {
+                    const py = await PyScript.load();
+                    await py.run(script);
+                } catch (error) {
+                    console.error('Error executing Python script:', error);
+                }
+            }
+    </script>
+</head>
+<body>
+    <h1>PyScript in Browser</h1>
+    <button onclick="runPyScript()">Run Python Script</button>
+    
 
 </body>
+</html>
