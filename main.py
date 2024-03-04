@@ -16,4 +16,5 @@ def runProg():
 
 if __name__ == "__main__":
     runProg()
+    os.system("bash ./.venv/bin/python3 ./homepage.py")
     pass
