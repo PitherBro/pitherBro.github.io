@@ -1,0 +1,7 @@
+{
+    "packages": [
+        "os",
+        "sys",
+        "json"
+    ]
+}

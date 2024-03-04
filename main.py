@@ -9,9 +9,11 @@ root = Path(os.path.dirname( __file__ ))
 modPath = root/"module"
 sys.path.append(modPath)
 '''
-
-if __name__ == "__main__":
+def runProg():
     print(__name__)
     print(sys.argv)    
     print(sys.path)
+
+if __name__ == "__main__":
+    runProg()
     pass
