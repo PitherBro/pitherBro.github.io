@@ -1,0 +1,15 @@
+[
+{
+    "name": "dotPerson",
+    "type": "entity-unit",
+    "weight":"185-lb",
+    "muscle": "65lb",
+    "fat": "120",
+    "food-need-a-turn": "funciton",
+    "height":"5-f8.5i-n",
+    "happiness":".85",
+    "foodneed":""
+},
+{}
+
+]
