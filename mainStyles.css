@@ -1,11 +1,22 @@
 body{
     background-color: black;
-    background-image: url(./img/terminalBackground-style-med.jpg);
+    background-image: url(./img/terminalBackground-style-med-redef.jpg);
     opacity: .75;
     color: rgb(114, 236, 114);
-    font-size: large;
+    font-size: xx-large;
+    text-align: center;
+
 }
 table{
     background-color: #333;
     color: limegreen;
+}
+
+a{
+    color: cyan;
+}
+a:visited{
+
+    color: aliceblue;
+
 }
