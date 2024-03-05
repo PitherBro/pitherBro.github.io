@@ -1,3 +1,7 @@
+
+/*
+Default Terminal style background
+*/
 body{
     background-color: black;
     background-image: url(./img/terminalBackground-style-med-redef.jpg);
@@ -5,16 +9,25 @@ body{
     color: rgb(114, 236, 114);
     font-size: xx-large;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+/*
+gray background and green text for tables
+*/
 table{
     background-color: #333;
     color: limegreen;
 }
-
+/*
+link default color
+*/
 a{
     color: cyan;
 }
+/*
+after link has been clicked
+*/
 a:visited{
 
     color: aliceblue;
