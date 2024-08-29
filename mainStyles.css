@@ -33,3 +33,17 @@ a:visited{
     color: aliceblue;
 
 }
+
+@keyframes flicker {
+    35% {
+        opacity: 0;
+    }
+}
+
+.flicker{
+    color: rgb(255, 81, 0);
+    background-color: rgb(128, 128, 128, .7);
+    font-size: x-large;
+    animation: flicker .75s linear infinite;
+    font-family: 'Times New Roman', Times, serif;
+}
